@@ -1,11 +1,13 @@
 # This fork includes community fixes to the original theme.
-Credit:
+Changes:
 - [Original theme](https://github.com/monday15/lounge-gtk-theme) by [monday15](https://github.com/monday15)
 - [Fix linked buttons styling; also add styles for libhandy](https://github.com/monday15/lounge-gtk-theme/pull/22) by [johnfactotum](https://github.com/johnfactotum)
+- Metacity theme from [Ceres GTK theme](https://gitlab.com/sixsixfive/ceres-gtk) by [sixsixfive](https://gitlab.com/sixsixfive). Modified by [vyvir](https://github.com/vyvir).
+- MATE desktop theme by [vyvir](https://github.com/vyvir).
 
 ## Overview
 A GTK theme with a vintage scrollbars, inspired by Absolute, based on Adwaita.  
-Supported desktop environments: GNOME, XFCE.  
+Supported desktop environments: GNOME, XFCE, MATE.  
 
 [**Default theme screenshot**](https://user-images.githubusercontent.com/42862490/64915766-e0395300-d766-11e9-8a0b-1a9b93cc6d3d.png)  
 [**Availiable options screenshot**](https://user-images.githubusercontent.com/42862490/64915767-e0395300-d766-11e9-9ced-6516835ed114.png)
@@ -13,34 +15,8 @@ Supported desktop environments: GNOME, XFCE.
 Also check Lounge-backgrounds - dynamic wallpaper for gnome-desktop [(repository)](https://github.com/monday15/lounge-backgrounds).
  
 ## Installation
-**Fedora**:  
-`sudo dnf copr enable monday15/lounge`  
-`sudo dnf install lounge-gtk-theme`  
-or  
-`sudo dnf install lounge-gtk-theme-xfce-sway` for xfce/sway users.
 
-> Lounge-aux-icon-theme comes as a weak dependency, with Adwaita as a main icon theme. Lounge-backgrounds is also a recommended dependency.
-
-
-**Ubuntu**:  
-`sudo add-apt-repository ppa:monday15/lounge`  
-`sudo apt install lounge-gtk-theme`  
-or  
-`sudo apt install lounge-gtk-theme-xfce-sway` for xfce/sway users.
-
-> Lounge-aux-icon-theme comes as a weak dependency, with Adwaita as a main icon theme. Lounge-backgrounds is also a recommended dependency.
-
-## Flatpak
-Flatpak apps support available via Flathub:  
-`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`  
-`flatpak install flathub org.gtk.Gtk3theme.Lounge`  
-`flatpak install flathub org.gtk.Gtk3theme.Lounge-night`  
-`flatpak install flathub org.gtk.Gtk3theme.Lounge-compact`  
-`flatpak install flathub org.gtk.Gtk3theme.Lounge-night-compact`  
-
-> If you want to use the theme built with custom options for flatpak apps, you can install default flatpak package and copy files from you variant of the theme to flatpak folder. Default location for flatpak packages is `/var/lib/flatpak/...`, full command will look something like `sudo cp -r /usr/share/themes/Lounge/gtk-3.0/* /var/lib/flatpak/runtime/org.gtk.Gtk3theme.Lounge/x86_64/3.22/active/files/`. Note, that flatpak supports only gtk3 themes.
-
-## Building
+## Building (preferred)
 Requirements:  
 `gtk3` (3.22+)   
 `meson` (0.45+)  
@@ -72,7 +48,18 @@ Requirements:
 - Install theme:  
 `sudo ninja -C build install`
 
-## Licence
+## Flatpak
+Flatpak apps support available via Flathub:  
+`flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`  
+`flatpak install flathub org.gtk.Gtk3theme.Lounge`  
+`flatpak install flathub org.gtk.Gtk3theme.Lounge-night`  
+`flatpak install flathub org.gtk.Gtk3theme.Lounge-compact`  
+`flatpak install flathub org.gtk.Gtk3theme.Lounge-night-compact`  
+
+> If you want to use the theme built with custom options for flatpak apps, you can install default flatpak package and copy files from you variant of the theme to flatpak folder. Default location for flatpak packages is `/var/lib/flatpak/...`, full command will look something like `sudo cp -r /usr/share/themes/Lounge/gtk-3.0/* /var/lib/flatpak/runtime/org.gtk.Gtk3theme.Lounge/x86_64/3.22/active/files/`. Note, that flatpak supports only gtk3 themes.
+
+
+## License
 GPLv3+, see LICENSE file.  
 Original themes/styles copyrights are in COPYRIGHT file.
 

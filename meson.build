@@ -70,7 +70,8 @@ dirs_array = [
   ['gtk-2.0',     'gtk2_dir' ],
   ['gtk-3.0',     'gtk3_dir' ],
   ['gnome-shell', 'shell_dir'],
-  ['xfwm4',       'xfwm4_dir']
+  ['xfwm4',       'xfwm4_dir'],
+  ['metacity-1',  'metacity_dir']
 ]
 
 # Create variables for theme directories
@@ -172,7 +173,8 @@ gtk3_noconf_sources = [
   'gtk3-common.scss',
   'gtk3-apps.scss',
   'gtk3-xfce.scss',
-  'gtk3-libhandy.scss'
+  'gtk3-libhandy.scss',
+  'gtk3-mate.css'
 ]
 
 # Copy sources that doesnt require configuration to builddir
@@ -431,11 +433,14 @@ foreach theme : assets_themes
 endforeach
 
 
-  # AUXILIARY ICON THEME
+# AUXILIARY ICON THEME
 
 if get_option('icons')
   subdir('src/aux-icons')
 endif
+
+# METACITY THEME
+subdir('src/metacity-1')
 
 # Regular build end
 endif
@@ -481,7 +486,8 @@ gtk3_noconf_sources = [
   'gtk3-drawing.scss',
   'gtk3-common.scss',
   'gtk3-apps.scss',
-  'gtk3-xfce.scss'
+  'gtk3-xfce.scss',
+  'gtk3-mate.css'
 ]
 
 gtk3_version = '3.24'

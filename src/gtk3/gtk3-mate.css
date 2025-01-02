@@ -1,0 +1,52 @@
+.mate-panel-menu-bar {
+	background-color: #303030;
+}
+
+.mate-panel-menu-bar PanelSeparator {
+    color: rgba(255, 255, 255, 0);
+    padding-top: 4px;
+    padding-bottom: 4px; 
+}
+
+.mate-panel-menu-bar na-tray-applet {
+    -NaTrayApplet-icon-padding: 1px;
+}
+
+MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
+	background-image: none;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.mate-panel-menu-bar button {
+	color: #ffffff;
+	border-radius: 0;
+	border: none;
+	background-color: #303030; 
+}
+
+.mate-panel-menu-bar button:hover, .mate-panel-menu-bar button:checked {
+    border: none;
+    background-color: #c1dcf9; 
+}
+
+.mate-panel-menu-bar button label, .mate-panel-menu-bar button image {
+    color: inherit;
+}
+
+#clock-applet-button {
+	font-size: large;
+}
+
+#showdesktop-button image {
+	background-color: #303030;
+}
+
+/* Does the same thing as the applet but less prone to crashes */
+.-vala-panel-appmenu-private > menuitem:first-child > label {
+   font-weight: bolder;
+}
+
+.-vala-panel-appmenu-private > menuitem {
+	color: #ffffff;
+}

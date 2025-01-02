@@ -1,4 +1,5 @@
 [X-GNOME-Metatheme]
+MetacityTheme=@theme_name@
 Name=@theme_name@
 Type=X-GNOME-Metatheme
 Comment=@theme_name@ theme
