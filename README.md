@@ -1,3 +1,9 @@
+# This fork includes community fixes to the original theme.
+Credit:
+- [Original theme](https://github.com/monday15/lounge-gtk-theme) by [monday15](https://github.com/monday15)
+- [Fix linked buttons styling; also add styles for libhandy](https://github.com/monday15/lounge-gtk-theme/pull/22) by [johnfactotum](https://github.com/johnfactotum)
+- [fixed a bug with button not having a left border](https://github.com/monday15/lounge-gtk-theme/pull/21) by [ptrxyz](https://github.com/ptrxyz)
+
 ## Overview
 A GTK theme with a vintage scrollbars, inspired by Absolute, based on Adwaita.  
 Supported desktop environments: GNOME, XFCE.  
